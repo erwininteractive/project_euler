@@ -13,14 +13,11 @@
  * @param int $range how far to check?
  * @return int 
  */
-function sum(int $range): int
-{
+function sum(int $range): int {
     $sum = 0;
 
-    foreach (range(1, $range) as $i) 
-    {
-        if ($i % 3 == 0 || $i % 5 == 0) 
-        {
+    foreach (range(1, $range) as $i) {
+        if ($i % 3 == 0 || $i % 5 == 0) {
             $sum += $i;
         }
     }
