@@ -20,7 +20,7 @@ function sum(int $range): int {
     $c = 0;
     $sum = 0;
 
-    while ($c <= $range) {
+    do {
         if ($c % 2 == 0) {
             $sum += $c;
         }
@@ -28,7 +28,7 @@ function sum(int $range): int {
         $c = $a + $b;
         $a = $b;
         $b = $c;
-    }
+    } while ($c <= $range); 
 
     return $sum;
 }
